@@ -1,0 +1,456 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  height: 100%;
+  margin: 0;
+  
+}
+
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.nav-item:hover{
+   border: 1px solid #ffc107;
+}
+
+
+/* divider */
+.divider{
+  width:2px;
+  height:40px;
+  background:#ffc107;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  position:relative;
+  padding-top: 80px;
+  height: calc(100vh - 70px);
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+}
+
+/* content */
+.hero-content{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+}
+
+/* play button */
+.play-btn{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  background:#00000080;
+  border:none;
+  font-size:30px;
+  color:#fff;
+  margin-bottom:30px;
+}
+
+/* info box */
+.info-box{
+  background:rgba(0,0,0,0.5);
+  padding:20px 30px;
+  border-radius:10px;
+  max-width:500px;
+}
+
+
+
+.icon1 i{
+  background:#ffc107;
+  color:#000;
+  padding:10px;
+  margin:5px 0;
+  border-radius:5px;
+}
+
+
+
+
+.modal-content{
+  border-radius:15px;
+}
+
+.modal-title{
+  font-weight:bold;
+}
+
+.modal-body{
+  padding:30px;
+}
+
+
+.form-check-input:checked {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.icon1 i:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100vh;
+}
+
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.icon1 {
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.welcome-section {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("../image/your-image.jpg") center/cover no-repeat;
+              padding: 3px;
+              
+}
+
+.translate-box{
+   background-color: #cb9800;
+}
+
+
+.translate-title {
+  background-color: #ffc107;
+}
+
+
+.section9{
+  height: 400px;
+  background-image: url(../image/—Pngtree—cheesy\ pizza\ slice\ being\ lifted_16477095.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+
+}
+
+.hover-cubes {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* المكعبين */
+.hover-cubes::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 187, 0, 0.9);
+  top: 52%;
+  left: 55%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 2s ease;
+  z-index: 5;
+  opacity: 0.1;
+}
+
+.hover-cubes::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 187, 0, 0.9);
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 2s ease;
+  z-index: 5;
+  opacity: 0.1;
+}
+
+/* المكعب اللي فوق */
+.hover-cubes::before {
+  border-radius: 8px;
+
+}
+
+/* المكعب اللي تحت */
+.hover-cubes::after {
+  border-radius: 8px;
+}
+
+/* Hover animation */
+.hover-cubes:hover::before {
+  transform:
+    translate(-50%, -100%)
+    scale(5);
+}
+
+.hover-cubes:hover::after {
+  transform:
+    translate(-50%, 0%)
+    scale(5);
+}
+
+/* المحتوى يفضل باين */
+.hover-cubes * {
+  position: relative;
+  z-index: 3;
+}
+
+
+.hover-cubes {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.50);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+/* عند hover */
+.hover-cubes:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+  transform: translateY(-6px);
+}
+
+
+.cardd{
+  position: relative;
+  font-size: medium;
+  font-style: italic;
+  font-weight: 400;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.img123{
+  border-radius: 13px;
+  
+}
+
+
+
+.caard{
+  position: absolute;
+  background: #000;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.5;
+  border-radius: 13px;
+}
+
+.img111{
+  width: 40px;
+  border-radius: 45%;
+  height: 50px;
+  border: 2px solid rgb(182, 174, 174) ;
+}
+
+
+.card-title{
+  font-size: large;
+}
+
+.cardd:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+
+
+.news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
+
+  /* العوجة */
+  clip-path: polygon(
+     10% 0%,
+    100% 0%,
+    100% 100%,
+    30% 100%
+  );
+}
+
+.img112{
+  height: 350px;
+  overflow: hidden;
+}
+
+.carr{
+  padding: 0 10px;
+  
+}
+
+.carr:hover .news-img{
+  transform: scale(1.1);
+  transition: 1s;
+
+}
+
+.meeal{
+  background-color: #ffc107;
+  height: 3px;
+  width: 130px;
+}
+
+.mayy{
+  font-weight:900;
+  font-size: small;
+}
+
+.podd{
+  font-size:25px;
+}
+
+.card {
+  border-radius: 6px;
+}
+
+.card:hover {
+  box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+  transition: 0.4s;
+}
+
+
+
+
+
+.img-box {
+  overflow: hidden;
+  height: 100%;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+
+  clip-path: polygon(
+    0% 0%,
+    85% 0%,
+    65% 100%,
+    0% 100%
+  );
+}
+
+.card:hover .img-box img {
+  transform: scale(1.1);
+}
+
+.card23{
+  box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+  transition: 0.5s;
+}
+
+.card23:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+.footer-section {
+  background-color: #7a8a97; /* نفس الرمادي اللي في الصورة */
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.footer-section h5 {
+  color: #eaeaea;
+}
+
+.footer-section p {
+  margin-bottom: 6px;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.footer-line {
+  width: 70%;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  margin: 10px auto 15px;
+}
+
+.footer-bottom {
+  background-color: #6f7f8b;
+  color: #f5c542; /* الأصفر */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav {
+  position: static !important;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+.img-fluid{
+  width: 600px;
+  height: 300px;
+}
+
+.btn10{
+  padding: 7px 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.labb{
+  font-size:x-large;
+  padding-right: 15px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cardd{
+  padding-bottom: 20px;
+}
+
